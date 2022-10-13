@@ -1,0 +1,57 @@
+.app__content {
+  padding-top: 80px;
+  width: 80%;
+  margin: 0 auto;
+  color: #ddd;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box;
+
+  input, select {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .app__title {
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+  }
+
+  .app__hint {
+    width: 100%;
+    text-align: center;
+  }
+
+  .app__data-wrapper {
+    margin: 20px auto 0;
+    width: 50%;
+
+
+    .app__country-select-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      select {
+        width: 130px;
+        text-align: center;
+      }
+    }
+
+    .app__exchange-course-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 20px auto 0;
+
+      .app__exchange-course-value {
+        width: 130px;
+        text-align: center;
+        background: white;
+      }
+    }
+
+  }
+}

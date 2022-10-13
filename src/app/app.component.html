@@ -1,0 +1,28 @@
+<div class="app__content" role="main">
+
+  <div class="app__title">{{ title }}</div>
+  <div class="app__hint">Select country and it will show exchange course</div>
+
+
+  <div class="app__data-wrapper">
+
+    <div class="app__country-select-wrapper">
+      <div>Country</div>
+      <select [ngModel]="allCountryData" (ngModelChange)="onChange($event)">
+        <option *ngFor="let countryData of allCountryData" [ngValue]="countryData.country">{{countryData.country}}</option>
+      </select>
+    </div>
+
+
+    <div class="app__exchange-course-wrapper">
+      <div>Exchange course</div>
+      <input class="app__exchange-course-value" type="number" disabled [value]="selectedValue && selectedValue.reduced_rate">
+    </div>
+
+
+  </div>
+
+
+</div>
+
+<router-outlet></router-outlet>
